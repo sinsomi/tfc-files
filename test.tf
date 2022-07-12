@@ -17,14 +17,14 @@ resource "aws_instance" "ireland" {
   }
 }
 
-resource "aws_lb_target_group" "test" {
+resource "aws_lb_target_group" "ireland" {
   name     = "test-tg-${random_pet.app.id}-lb"
   port     = 22
   protocol = "TCP"
   vpc_id   = module.vpc.vpc_id
 }
 
-resource "aws_lb_target_group_attachment" "test" {
+resource "aws_lb_target_group_attachment" "ireland" {
   count            = length(aws_instance.test)
   target_group_arn = aws_lb_target_group.test.arn
   target_id        = aws_instance.test[count.index].id

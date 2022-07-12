@@ -1,4 +1,4 @@
-resource "aws_instance" "test" {
+resource "aws_instance" "ireland" {
   count = var.enable_test_env ? var.test_instance_count : 0
 
   ami                    = data.aws_ami.amazon_linux.id

@@ -4,7 +4,7 @@ resource "aws_instance" "test" {
   ami                    = data.aws_ami.amazon_linux.id
   instance_type          = "t2.micro"
    
-  key_name		 = "test"
+  key_name		 = "ireland"
 
   subnet_id              = module.vpc.public_subnets[count.index % length(module.vpc.public_subnets)]
   vpc_security_group_ids = [module.ssh_security_group.this_security_group_id]

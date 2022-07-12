@@ -1,4 +1,4 @@
-resource "aws_key_pair" "test" {
+resource "aws_key_pair" "ireland" {
   key_name = "ireland"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC9gWCobpA1sMtUJz1opVimGWDzTVdAvw72e3sWi+qHSdM93tCRP/DZzHAuZxb2oNL/SQxftlPzesFhrcmmmvLwGqE9zXEzxVMaqJ0T5fnwg8DGctS1DmBDIMMuhEtk5yjisOz30GV8pS3mKtpjPiiCJXpzuRnjugWFjT1X4eAjeu4jb3gQmznk484BA8w4rYQnoihRTpvcdnqFSLDB1HO3s7EjGCXy0LAOi6N3zniCtuKbH7BnZahfL+ZbVj+cvx3CVr3Ek6psYI2C9QYd96OwFfH2EcTg+gFU8/rOXGHF2RRx4bj2Nkz/XV/5VEYJeiA1CuzXpKwtVupk1H0ccCCaLbe9FxEFGQWCtvtfXZ+20t3zZkTSxuFO22oDJidINWXUb6kiDXlwBL08eKO/+cNeMN05N+JRN5Lgv39kY0KswGgbJJNKJ4/fkDx5o0V6MbW+qQVqlyFBMf97n/WFNPERaeGNATjufCAX+JzGDZ9qMlbNjbTrRkR2sBAer7qFPJ8= root@hc5-master1"
 }

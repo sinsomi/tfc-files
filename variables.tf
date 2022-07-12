@@ -1,7 +1,7 @@
 variable "region" {
   description = "The region Terraform deploys your instances"
   type        = string
-  default     = "eu-west-2"
+  default     = "eu-west-1"
 }
 
 variable "vpc_cidr_block" {
